@@ -98,7 +98,7 @@ m.fetchall(colletion_id:int) => list[bytes]
 
 ## Binary Format
 
-TODO
+![binary format describing figure](doc/asserts/mio.png)
 
 
 
