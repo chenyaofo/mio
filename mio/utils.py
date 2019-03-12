@@ -3,6 +3,10 @@ import struct
 from io import BytesIO
 from PIL import Image
 
+__all__ = [
+    "bytes2image",
+]
+
 
 class Serializer(object):
     def __init__(self, format_):

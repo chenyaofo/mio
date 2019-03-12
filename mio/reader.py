@@ -39,7 +39,7 @@ class MioReader(MioBase):
             self.collections_map[collection_index_start:collection_index_end])
 
     @property
-    def size(self):
+    def size(self) -> int:
         return self.n_collections
 
     def get_collection_metadata(self, collection_id):
@@ -49,7 +49,7 @@ class MioReader(MioBase):
 
     def get_collection_size(self, collection_id):
         start, metadata_length, payload_length = self._get_collection(collection_id)
-        return payload_length / self.object_serializer.format_.size
+        return payload_length // self.object_serializer.format_.size
 
     def fetchone(self, colletion_id, object_id=0):
         return self._fetch(colletion_id, object_id)

@@ -67,7 +67,7 @@ class Colletions():
     def set_meta(self, data):
         self.metadata = data
 
-    def add_obeject(self, bytes_):
+    def add_object(self, bytes_):
         start = self.m.objects.tell()
         length = len(bytes_)
         self.m.objects.write(bytes_)

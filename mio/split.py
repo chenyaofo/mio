@@ -25,4 +25,4 @@ class Split(object):
         with pathlib.Path(path).open("rb") as f:
             b = f.read()
             items = serializer.iter_unpack(b)
-        return [item[0] for item in items]
+        return Split([item[0] for item in items])
